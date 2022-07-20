@@ -42,11 +42,8 @@ function game(){
         const computerSelection = computerPlay();
         console.log (`${playRound(playerSelection, computerSelection)} Score is now You: ${score} and Computer: ${computerScore}`)
     }
-    if (score > computerScore) {
-        console.log (`You win the best out of 5, score is ${score} vs ${computerScore}`);
-    } else {
+    (score > computerScore)? console.log (`You win the best out of 5, score is ${score} vs ${computerScore}`) : 
         console.log (`You lose the best out of 5, score is ${score} vs ${computerScore}`);
-    }
 }
 
 let score = 0;
